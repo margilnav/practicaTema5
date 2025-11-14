@@ -8,6 +8,9 @@ public class CodigiPracticaAnterior {
         int anyo = sc.nextInt();
         LocalDateTime fechaActual = LocalDateTime.now();
         int edad = fechaActual.getYear() + anyo;
+        int actual = fechaActual.getYear();
+        int edad1 = actual - anyo;
+        System.out.println("Año actual: " + actual);
         if (edad > 18) {
             System.out.println("Eres mayor de edad");
         } else {
